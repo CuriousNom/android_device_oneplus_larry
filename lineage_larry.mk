@@ -14,6 +14,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from larry device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Matrixx
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_MAINTAINER := Aryan
+MATRIXX_CHIPSET := SM6375
+MATRIXX_BATTERY := 5000mAh
+MATRIXX_DISPLAY := 1080x2400
+WITH_GMS := false
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_larry
 PRODUCT_DEVICE := larry
